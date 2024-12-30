@@ -1,4 +1,6 @@
 import React from 'react'
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 function App() {
   // let a = 'hello world'
@@ -38,13 +40,26 @@ function App() {
   //     )
   //   })
   // }
+   const [a,setb]=useState(10) 
 
-  return (
-    <>
-     
+   function handler(){
+   
+    setb(14)
+    
+   }
+  
+
+   return (
+   <>
+         {
+          <h1>{a}</h1> }
+
+          <button onClick={()=>handler()}>
+             Change 
+          </button>
+        
     </>
   )
-
 }
 
 export default App
