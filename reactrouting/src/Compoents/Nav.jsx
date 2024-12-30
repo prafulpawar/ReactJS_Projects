@@ -10,7 +10,6 @@ const Nav = () => {
           <Link to='/contact'> Contact  </Link>
           <Link to='/products'> Product </Link>
           </div>
-        
     </div>
   )
 }

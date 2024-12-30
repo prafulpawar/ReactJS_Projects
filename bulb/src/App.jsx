@@ -33,7 +33,7 @@
 
 // export default App
 
-//Ye Jo Example Hai vo Conditial Rendering Aur Arrow Function Ke Sath Me Hai 
+// Ye Jo Example Hai vo Conditial Rendering Aur Arrow Function Ke Sath Me Hai 
 // Jo Ki Time Par Direct useState Ki Value ko Chnage Karenga 
 
 
