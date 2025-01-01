@@ -4,6 +4,7 @@
 4. Random Team Selection (IPL Winner 2025)
 5. setTimeout (Friend Reqest send in few seconds, sending...)
 6. setInterval (Download feature)
+
 7. setAttribute and getAttribute (Image Swap)
 8. create element (Insects generator and giving them random position)
 9. Mousemove (Custom cursor)
