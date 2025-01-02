@@ -10,7 +10,7 @@ const App = () => {
     let downloadProgress = 0;
 
     const interval = setInterval(() => {
-      downloadProgress += 2; 
+      downloadProgress += 1; 
 
       if (downloadProgress <= 100) {
         setProgress(downloadProgress); 
