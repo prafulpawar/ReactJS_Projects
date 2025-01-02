@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // Import CSS file
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [email, setEmail] = useState('');
@@ -11,7 +11,7 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
-
+  
     function CheckEmail() {
       const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
       if (!emailRegex.test(email)) {
@@ -23,16 +23,21 @@ function App() {
       }
       return true; 
     }
-
+  
     function CheckPass() {
       if (password !== confirm) {
         toast.error('Passwords do not match!', {
           position: 'top-right',
           autoClose: 3000,
         });
+        setEmail('');
+        setPassword('');
+        setConfirm('');
+        setFirst('');
+        setLast('');
         return false;
       }
-
+  
       if (password.length < 8) {
         toast.error('Password must be at least 8 characters long!', {
           position: 'top-right',
@@ -40,13 +45,12 @@ function App() {
         });
         return false;
       }
-
-      // Check for at least one uppercase, lowercase, digit, and special character
+  
       let upperCount = 0;
       let lowerCount = 0;
       let zeroCount = 0;
       let specialCharCount = 0;
-
+  
       for (let i = 0; i < password.length; i++) {
         if (password[i] === password[i + 1]) {
           toast.error('Password contains consecutive identical characters!', {
@@ -70,7 +74,7 @@ function App() {
           specialCharCount++;
         }
       }
-
+  
       if (upperCount > 0 && lowerCount > 0 && zeroCount > 0 && specialCharCount > 0) {
         return true;
       } else {
@@ -81,15 +85,23 @@ function App() {
         return false;
       }
     }
-
-    if (!CheckEmail()) return; // If email is invalid, stop form submission
-    if (!CheckPass()) return; // If password is invalid, stop form submission
-
+  
+    if (!CheckEmail()) return;
+    if (!CheckPass()) return;
+  
+    // Clear the form fields
     toast.success('Form submitted successfully!', {
       position: 'top-right',
       autoClose: 3000,
     });
+  
+    setEmail('');
+    setPassword('');
+    setConfirm('');
+    setFirst('');
+    setLast('');
   }
+  
 
   return (
     <div className='mt-5'>
@@ -187,7 +199,6 @@ function App() {
         >Submit</button>
       </form>
 
-      {/* Toast Container */}
       <ToastContainer />
     </div>
   )
