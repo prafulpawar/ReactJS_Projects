@@ -41,3 +41,24 @@ function App() {
 }
 
 export default App
+
+// import React, { useState } from 'react'
+
+// const App = () => {
+//   const [count, setcount] = useState(0)
+//   return (
+//     <div>
+//       <h1>{count}</h1>
+//       <button onClick={()=>{
+//         console.log(count)   // 0
+//         setcount((prev)=> prev + 1)  
+//         setcount((prev)=> prev + 1)   
+//         setcount((prev)=> prev + 1)   
+//         console.log(count)  // 0
+//         alert(count) 
+//       }}>click</button>
+//     </div>
+//   )
+// }
+
+// export default App
