@@ -8,10 +8,7 @@ function App() {
   function handleClick(){
     if (elementRef.current) {
       console.log( elementRef.current.value)
-      
         elementRef.current.click()
-          
-
     }
   }
 
