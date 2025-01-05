@@ -40,8 +40,8 @@ function App() {
   }, []);
 
   return (
-    <div className="h-screen relative flex flex-col justify-center items-center bg-red-300">
-      <div className="border-2 p-2 flex justify-center items-center">
+    <div className="h-screen relative flex flex-col justify-center items-center bg-white">
+      <div className=" p-2 flex justify-center items-center">
        
         <img
           className="w-48 absolute"
@@ -52,7 +52,7 @@ function App() {
       </div>
 
      
-      <div className="border-2 mt-2 rounded-xl pr-3 pl-3 p-1 bg-green-300">
+      <div className="border-2 z-10 mt-2 rounded-xl pr-3 pl-3 p-1 bg-green-300">
         {key}
       </div>
     </div>
