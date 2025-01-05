@@ -14,4 +14,3 @@
 12. JSON data to frontend (Cards making by JS)
 13. Insta Story Feature 
 14. Whattsapp Status Featureyy
-
