@@ -48,6 +48,7 @@ function App() {
 
           <div className='text-6xl text-white'>
                  { winner === index ? team.name :"" }
+                
           </div>
 
         ))}
