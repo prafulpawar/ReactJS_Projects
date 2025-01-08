@@ -13,7 +13,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const genAI = new GoogleGenerativeAI("AIzaSyBweJSe-EifasNG8ZvKyR6ewnPAtESAuEY");
+      const genAI = new GoogleGenerativeAI("__________________________");
       const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" })
       
 
